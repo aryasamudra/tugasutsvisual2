@@ -1,0 +1,279 @@
+object Form5: TForm5
+  Left = 192
+  Top = 125
+  Width = 928
+  Height = 480
+  Caption = 'LATIHAN 2 KONDISIONAL'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 144
+    Top = 120
+    Width = 91
+    Height = 16
+    Caption = 'Nilai Kehadiran'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 144
+    Top = 144
+    Width = 69
+    Height = 16
+    Caption = 'Nilai Tugas'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 144
+    Top = 168
+    Width = 58
+    Height = 16
+    Caption = 'Nilai UTS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 144
+    Top = 192
+    Width = 70
+    Height = 16
+    Caption = 'Nilai Harian'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 144
+    Top = 216
+    Width = 58
+    Height = 16
+    Caption = 'Nilai UAS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 144
+    Top = 280
+    Width = 44
+    Height = 16
+    Caption = 'TOTAL'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 144
+    Top = 304
+    Width = 48
+    Height = 16
+    Caption = 'GRADE'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 144
+    Top = 328
+    Width = 93
+    Height = 16
+    Caption = 'KETERANGAN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 248
+    Top = 120
+    Width = 121
+    Height = 21
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 248
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'Hitung'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 336
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'Hapus'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 424
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'Keluar'
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object Edit2: TEdit
+    Left = 248
+    Top = 144
+    Width = 121
+    Height = 21
+    TabOrder = 4
+  end
+  object Edit3: TEdit
+    Left = 248
+    Top = 168
+    Width = 121
+    Height = 21
+    TabOrder = 5
+  end
+  object Edit4: TEdit
+    Left = 248
+    Top = 192
+    Width = 121
+    Height = 21
+    TabOrder = 6
+  end
+  object Edit5: TEdit
+    Left = 248
+    Top = 216
+    Width = 121
+    Height = 21
+    TabOrder = 7
+  end
+  object Edit6: TEdit
+    Left = 248
+    Top = 280
+    Width = 249
+    Height = 21
+    ReadOnly = True
+    TabOrder = 8
+  end
+  object Edit7: TEdit
+    Left = 248
+    Top = 304
+    Width = 249
+    Height = 21
+    ReadOnly = True
+    TabOrder = 9
+  end
+  object Edit8: TEdit
+    Left = 248
+    Top = 328
+    Width = 249
+    Height = 21
+    ReadOnly = True
+    TabOrder = 10
+  end
+  object Edit9: TEdit
+    Left = 376
+    Top = 120
+    Width = 121
+    Height = 21
+    ReadOnly = True
+    TabOrder = 11
+    Text = '15'
+  end
+  object Edit10: TEdit
+    Left = 376
+    Top = 144
+    Width = 121
+    Height = 21
+    ReadOnly = True
+    TabOrder = 12
+    Text = '25'
+  end
+  object Edit11: TEdit
+    Left = 376
+    Top = 168
+    Width = 121
+    Height = 21
+    ReadOnly = True
+    TabOrder = 13
+    Text = '20'
+  end
+  object Edit12: TEdit
+    Left = 376
+    Top = 192
+    Width = 121
+    Height = 21
+    ReadOnly = True
+    TabOrder = 14
+    Text = '10'
+  end
+  object Edit13: TEdit
+    Left = 376
+    Top = 216
+    Width = 121
+    Height = 21
+    ReadOnly = True
+    TabOrder = 15
+    Text = '30'
+  end
+  object Panel1: TPanel
+    Left = 248
+    Top = 88
+    Width = 121
+    Height = 25
+    Caption = 'NILAI'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 16
+  end
+  object Panel2: TPanel
+    Left = 376
+    Top = 88
+    Width = 121
+    Height = 25
+    Caption = 'BOBOT'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 17
+  end
+end

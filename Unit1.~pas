@@ -1,0 +1,72 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Label1: TLabel;
+    Edit1: TEdit;
+    Label2: TLabel;
+    Edit2: TEdit;
+    Label3: TLabel;
+    Edit3: TEdit;
+    Label4: TLabel;
+    Label5: TLabel;
+    ComboBox1: TComboBox;
+    DateTimePicker1: TDateTimePicker;
+    Button2: TButton;
+    Button3: TButton;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+edit1.clear;
+edit2.clear;
+edit3.clear;
+combobox1.text:='';
+datetimepicker1.datetime:=now;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+edit1.Text:='2110020059';
+edit2.Text:='Arya Samudra Alif';
+edit3.Text:='085156525569';
+combobox1.text:='LAKI-LAKI';
+datetimepicker1.date:=Date;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+label6.caption := edit1.Text;
+label7.caption := edit2.Text;
+label8.caption := edit3.Text;
+label9.caption := combobox1.Text;
+label10.caption := FormatDateTime('dddddd'.Tdatetimepicker1).date;
+end;
+
+end.
