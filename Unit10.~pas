@@ -25,7 +25,6 @@ type
     procedure KONDISIONAL21Click(Sender: TObject);
     procedure GRAFIKSTRINGGRID1Click(Sender: TObject);
     procedure GRAFIKSTRINGGRIDREVISI1Click(Sender: TObject);
-    procedure LAT1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,8 +35,6 @@ var
   Form10: TForm10;
 
 implementation
-
-uses Unit2, Unit3, Unit4, Unit5, Unit6, Unit7, Unit8;
 
 {$R *.dfm}
 
@@ -69,11 +66,6 @@ end;
 procedure TForm10.GRAFIKSTRINGGRIDREVISI1Click(Sender: TObject);
 begin
 form7.showmodal;
-end;
-
-procedure TForm10.LAT1Click(Sender: TObject);
-begin
-form8.showmodal;
 end;
 
 end.

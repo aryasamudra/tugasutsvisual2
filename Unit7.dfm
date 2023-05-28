@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 188
-  Top = 157
+  Left = 455
+  Top = 202
   Width = 928
   Height = 480
   Caption = 'GRAFIK REVISI'

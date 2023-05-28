@@ -114,15 +114,20 @@ open;
 showmessage('data berhasil diedit');
 end;
 end;
+
 procedure TForm9.Button3Click(Sender: TObject);
+var
+upd: string; // Mengubah tipe data variabel upd menjadi string
 begin
-with form8.qry1 do
+upd := IntToStr(123); // Contoh pengisian nilai upd dengan angka (misalnya 123)
+
+with Form8.qry1 do
 begin
 SQL.Clear;
-SQL.Add(' delete from kustomer where no="'+upd+'"');
+SQL.Add('DELETE FROM kustomer WHERE no="' + upd + '"'); // Menggunakan tanda petik ganda untuk nilai string
 ExecSQL;
 SQL.Clear;
-SQL.Add('select * from jadwal_table');
+SQL.Add('SELECT * FROM jadwal_table');
 Open;
 end;
 end;
@@ -139,12 +144,12 @@ end;
 
 procedure TForm9.Button5Click(Sender: TObject);
 begin
-ed1t1.Clear;
-ed1t2.Clear;
-ed1t3.Clear;
-ed1t4.Clear;
-ed1t5.Clear;
-ed1t6.Clear;
+edit1.Clear;
+edit2.Clear;
+edit3.Clear;
+edit4.Clear;
+edit5.Clear;
+edit6.Clear;
 end;
 
 end.
